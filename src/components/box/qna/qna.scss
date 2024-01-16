@@ -1,0 +1,37 @@
+.qna {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  .questionContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+      color: var(--dark-purple);
+    }
+
+    button {
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        &:hover {
+          clip-path: circle(50% at 50% 50%);
+          box-shadow: inset 0 0 0 6px #1f1e1e19;
+        }
+      }
+    }
+  }
+
+  .answerContainer {
+    p {
+      color: var(--grayish-purple);
+    }
+  }
+}

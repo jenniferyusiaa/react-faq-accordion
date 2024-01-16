@@ -1,0 +1,30 @@
+@import "../../assets/app.scss";
+
+.box {
+  width: 50%;
+  background-color: var(--white);
+  color: var(--dark-purple);
+  border-radius: 1rem;
+  padding: 0 2rem 2rem 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  @include mobile {
+    width: unset;
+    margin: 2rem;
+    border-radius: 0.5rem;
+  }
+
+  .titleContainer {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+    img {
+      width: 2rem;
+    }
+    h1 {
+      font-size: 3rem;
+      color: var(--dark-purple);
+    }
+  }
+}

@@ -1,0 +1,57 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-pink: hsl(275, 100%, 97%);
+  --grayish-purple: hsl(292, 16%, 49%);
+  --dark-purple: hsl(292, 42%, 14%);
+}
+
+@mixin mobile {
+  @media (max-width: 375px) {
+    @content;
+  }
+}
+
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  section {
+    background-image: url("/public/images/background-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: var(--light-pink);
+    height: 100dvh;
+    width: 100%;
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    @include mobile {
+      scroll-snap-type: unset;
+      background-size: 40rem auto;
+    }
+
+    .boxContainer {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+  }
+}
