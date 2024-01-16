@@ -49,9 +49,9 @@ const Qna = () => {
               }}
             >
               {faqsId === i ? (
-                <img src="/images/icon-minus.svg" alt="buttonimg" />
+                <img src="./images/icon-minus.svg" alt="buttonimg" />
               ) : (
-                <img src="/images/icon-plus.svg" alt="buttonimg" />
+                <img src="./images/icon-plus.svg" alt="buttonimg" />
               )}
             </button>
           </div>

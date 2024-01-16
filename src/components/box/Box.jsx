@@ -5,7 +5,7 @@ const Box = () => {
   return (
     <div className="box">
       <div className="titleContainer">
-        <img src="/images/icon-star.svg" alt="starimg" />
+        <img src="./images/icon-star.svg" alt="starimg" />
         <h1>FAQs</h1>
       </div>
       <div className="answerContainer">
